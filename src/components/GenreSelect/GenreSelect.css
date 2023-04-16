@@ -1,0 +1,33 @@
+.genreSelect {
+  width: 100%;
+}
+
+li.genreItem:hover {
+  cursor: pointer;
+  text-shadow: 1px 1px 1px rgb(87, 86, 86);
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #232323;
+}
+
+li.genreItem {
+  float: left;
+  padding: 0 16px 0 0px;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 14px;
+  color: #fff;
+  line-height: 20px;
+    /* identical to box height */
+
+text-transform: uppercase;
+}
+
+li.genreItem.active {
+  color: #f65261
+}

@@ -1,0 +1,156 @@
+.deleteMovieBody {
+	height: 55px;
+	font-family: Montserrat;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0px;
+	height: 65px;
+	color: #fff;
+}
+
+.deleteMovieFooter button{
+	color: #fff;
+}
+
+.deleteMovieFooter{
+	text-align: right;
+}
+
+.movieFormContent{
+	width: 560px;
+	height: 560px;
+}
+
+.deleteMovieContent{
+	width: 470px;
+	height: 110px;
+}
+
+.movieFormResetBtn, 
+.movieFormSubmitBtn {
+	cursor: pointer;
+}
+
+.movieFormBoxTitle {
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: 300;
+	font-size: 30px;
+	letter-spacing: 1px;
+	margin-bottom: 30px;
+}
+
+.movieFormLabel {
+	color: #F65261;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 20px;
+	margin: 30px 0 10px 0px;
+}
+
+.movieGenre > label {
+	margin: 17px 0 10px 0;
+}
+
+.inputRow{
+	display: flex;
+	flex-direction: row; 
+}
+
+.inputRow > div{
+	display: flex;
+	flex-direction: column; 
+}
+
+.inputRow > div:first-child{
+
+	width: 70%;
+	padding-right: 10px;
+}
+
+.inputRow > div:nth-child(2){
+	width: 30%;
+}
+
+.inputRow > div > input {
+	height: 40px;
+}
+
+.inputRow input, .inputRow textarea, .inputRow select {
+	background: rgba(50, 50, 50, 0.948044);
+	mix-blend-mode: normal;
+	opacity: 0.8;
+	border-radius: 4px;
+	border: 0px;
+	color: #fff;
+	font-size: 15px;
+	padding-left: 10px;
+}
+
+.inputRow.textarea{
+
+	display: flex;
+	flex-direction: column;
+}
+
+.inputRow textarea{
+	height: 130px;
+	font-family: Montserrat;
+	padding: 10px;
+}
+
+.formButtonsWrapper {
+	display: flex;
+	justify-content: right;
+	margin-top: 30px;
+}
+
+.movieFormResetBtn, .movieFormSubmitBtn {
+	text-transform: uppercase;
+	letter-spacing: 0.8px;
+	width: 110px;
+  height: 35px;
+	font-family: Montserrat;
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 24px;
+	text-align: center;
+}
+
+.movieFormResetBtn {
+	background-image: initial;
+	background-color: rgb(53, 55, 54);
+	border: 1px solid rgb(170, 40, 50);
+	border-radius: 4px;
+	color: rgb(255, 135, 144);
+	margin-right: 10px;
+}
+
+.movieFormSubmitBtn {
+	background: #F65261;
+	border-radius: 4px;
+	border: 0px;
+	border-radius: 4px;
+}
+
+.multiSelectDropDown > span > div > div {
+	border: 0px;
+	background-color: rgb(53, 55, 54);
+} 
+
+#react-select-2-listbox label {
+	color: #fff;
+	margin-left: 2px;
+	font-size: 15px;
+}
+
+.css-1xc3v61-indicatorContainer {
+	color: #F65261;
+}
+
+::-webkit-calendar-picker-indicator {
+	background-image: url('../../assets/Calendar_Icon.png');
+	margin-right: 5px;
+}

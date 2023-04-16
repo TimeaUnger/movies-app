@@ -1,0 +1,38 @@
+.movieTilesContent {
+	position: relative;
+	display: flex;
+}
+
+.foundMovies {
+	color: #fff;
+	padding: 25px 0 25px 27px;
+}
+
+.foundMoviesNr {
+	font-family: Montserrat;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 24px;
+	letter-spacing: 0px;
+}
+
+.foundMoviesTitle {
+	font-family: Montserrat;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0px;
+	padding-left: 5px;
+}
+
+.movieTilesWrapper {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 325px);
+	grid-gap: 2rem;
+	justify-content: space-between;
+}
+
+.movieListContentWrapper {
+	margin: 0 25px;
+}
+

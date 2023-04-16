@@ -1,0 +1,36 @@
+.sortControlWrapper {
+  width: 30%;
+  text-align: right;
+  padding: 16px 7px;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.8888887763023376px;
+  text-transform: uppercase;
+}
+
+.sortByLabel {
+  color: #9d9d9d;
+  margin-right: 10px;
+}
+
+.sortByControl select {
+  background: #232323;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0px;
+  font-size: 14px;
+  border: none;
+  letter-spacing: 1.5px;
+}
+
+.sortByControl select:hover {
+  cursor: pointer;
+}
+
+.sortByControl select *{
+  border-radius: 15px;
+  color: red;
+  padding:5px;
+}

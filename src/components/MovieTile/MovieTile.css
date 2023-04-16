@@ -1,0 +1,82 @@
+.movieImage {
+	height: 486px;
+}
+
+.movieImage:hover {
+	cursor: pointer;
+}
+
+.movieTile img {
+	max-width: 323px;
+	max-height: 486px;
+	color: #9d9d9d;
+}
+
+.movieTileDetails {
+	padding: 15px 27px 0px 0px;
+}
+
+.releaseDate {
+	float: right;
+	color: #9d9d9d;
+	border: 1px solid #9d9d9d;
+	border-radius: 3px;
+	padding: 2px 13px;
+	font-size: 14px;
+}
+
+.movieTitle {
+	font-size: 18px;
+	color: #d4cdcd;
+	float: left;
+	width: 80%;
+}
+
+.movieGenre {
+	font-size: 14px;
+	font-weight: 500;
+	color: #9d9d9d;
+	display: inline-block;
+	text-align: left;
+	width: 323px;
+	padding-top: 13px;
+}
+
+.editDeleteRowsWrapper {
+	position: absolute;
+	right: 5px;
+	top: 6px;
+	width: 200px;
+	background: #232323;
+	padding-top: 45px;
+	padding-bottom: 5px;
+}
+
+.movieTileWrapper {
+	position: relative;
+}
+
+.closeBtn {
+	text-align: right;
+	height: 15px;
+	padding: 7px 10px 0 0;
+	font-size: 18px;
+	color: #fff;
+}
+
+.closeBtn:hover {
+	cursor: pointer;
+}
+
+.editMovieRow, .deleteMovieRow {
+	height: 35px;
+	color: #fff;
+	padding-left: 15px;
+	display: flex;
+	align-items: center;
+}
+
+.editMovieRow:hover, .deleteMovieRow:hover {
+	background-color: #F65261;
+	cursor:pointer;
+}
