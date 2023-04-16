@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import MultiSelectDropdown from '../MultiSelectDropdown/MultiSelectDropdown';
 import Button from "../Button/Button";
-import './MovieForm.css';
+import styles from "./MovieForm.module.scss";
 
 const MovieForm = (props) => {
 	
@@ -83,33 +83,33 @@ const MovieForm = (props) => {
 
 	return (
 
-		<div className="movieFormWrapper">
-			<div className="movieFormBoxTitle">{`${formAction} movie`}</div>
-			<div className="movieForm">
+		<div className={styles.movieFormWrapper}>
+			<div className={styles.movieFormBoxTitle}>{`${formAction} movie`}</div>
+			<div className={styles.movieForm}>
 				<form onSubmit={handleSubmit}>
 				{formAction === 'delete' 
-					?	<div className="deleteMovieContent">
-							<div className="deleteMovieBody">Are you sure you want to delete this movie?</div>
-							<div className="deleteMovieFooter">
-								<Button type="submit" className="movieFormSubmitBtn">Confirm</Button>
+					?	<div className={styles.deleteMovieContent}>
+							<div className={styles.deleteMovieBody}>Are you sure you want to delete this movie?</div>
+							<div className={styles.deleteMovieFooter}>
+								<Button type="submit" className={styles.movieFormSubmitBtn}>Confirm</Button>
 							</div>
 						</div>
 					
-					: <div className="movieFormContent">
-							<div className="inputRow">
-								<div className="movieTitle">
-									<label htmlFor="movieTitle" className="movieFormLabel">Title</label>
+					: <div className={styles.movieFormContent}>
+							<div className={styles.inputRow}>
+								<div className={styles.movieTitle}>
+									<label htmlFor="movieTitle" className={styles.ovieFormLabel}>Title</label>
 									<input 
 										type="text" 
-										className="movieTitleInput" 
+										className={styles.movieTitleInput} 
 										name="title" 
 										id="movieTitle" 
 										value={formState.title}
 										onChange={handleInputChange}
 									/>
 								</div>
-								<div className="movieReleaseDate" >
-									<label htmlFor="movieReleaseDate" className="movieFormLabel">Release date</label>
+								<div className={styles.movieReleaseDate} >
+									<label htmlFor="movieReleaseDate" className={styles.movieFormLabel}>Release date</label>
 									<input 
 										type="date" 
 										name="release_date" 
@@ -119,9 +119,9 @@ const MovieForm = (props) => {
 									/>
 								</div>
 							</div>
-							<div className="inputRow">
+							<div className={styles.inputRow}>
 								<div className="movieUrl">
-									<label htmlFor="movieUrl" className="movieFormLabel">Movie url</label>
+									<label htmlFor="movieUrl" className={styles.movieFormLabel}>Movie url</label>
 									<input 
 										type="text" 
 										name="poster_path" 
@@ -131,7 +131,7 @@ const MovieForm = (props) => {
 									/>
 								</div>
 								<div className="movieRating">
-									<label htmlFor="movieRating" className="movieFormLabel">Rating</label>
+									<label htmlFor="movieRating" className={styles.movieFormLabel}>Rating</label>
 									<input 
 										type="text" 
 										name="vote_average" 
@@ -141,19 +141,19 @@ const MovieForm = (props) => {
 									/>
 								</div>
 							</div>
-							<div className="inputRow">
-								<div className="movieGenreSelect">
-									<label htmlFor="movieGenre" className="movieFormLabel">Genre</label>
+							<div className={styles.inputRow}>
+								<div className={styles.movieGenreSelect}>
+									<label htmlFor="movieGenre" className={styles.movieFormLabel}>Genre</label>
 									<MultiSelectDropdown 
 										options={multiSelectOptions}
 										defaultValue={optionSelected}
 										handleSelectChange={handleSelectChange}
 										isMulti={true}
-										className="movieFormOptions"
+										className={styles.movieFormOptions}
 									/>
 								</div>
-								<div className="movieRuntime">
-									<label htmlFor="movieRuntime" className="movieFormLabel">Runtime</label>
+								<div className={styles.movieRuntime}>
+									<label htmlFor="movieRuntime" className={styles.movieFormLabel}>Runtime</label>
 									<input 
 										type="text" 
 										name="runtime" 
@@ -163,8 +163,8 @@ const MovieForm = (props) => {
 									/>
 								</div>
 							</div>
-							<div className="inputRow textarea" >
-								<label htmlFor="movieOverview" className="movieFormLabel">Overview</label>
+							<div className={`${styles.inputRow} ${styles.textarea}`} >
+								<label htmlFor="movieOverview" className={styles.movieFormLabel}>Overview</label>
 								<textarea 
 									name="overview" 
 									id="movieOverview" 
@@ -173,9 +173,9 @@ const MovieForm = (props) => {
 								>
 								</textarea>
 							</div>
-							<div className="formButtonsWrapper">
-								<Button type="button" className="movieFormResetBtn" onClick={resetForm}>Reset</Button>
-								<Button type="submit" className="movieFormSubmitBtn">Submit</Button>
+							<div className={styles.formButtonsWrapper}>
+								<Button type="button" className={styles.movieFormResetBtn} onClick={resetForm}>Reset</Button>
+								<Button type="submit" className={styles.movieFormSubmitBtn}>Submit</Button>
 							</div>
 						</div>
 					}
